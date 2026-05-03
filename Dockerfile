@@ -33,9 +33,5 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 # Copy ONLY the virtual environment from the build stage (leaves behind gcc, caches, etc.)
 COPY --from=builder /opt/venv /opt/venv
 
-# Create a non-root user for security and run the container as that user
-RUN useradd -m -r -u 1000 camply_user
-USER camply_user
-
 # Set the entrypoint to the camply CLI
 ENTRYPOINT ["camply"]
