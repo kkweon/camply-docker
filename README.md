@@ -1,5 +1,8 @@
 # Camply Docker (Multi-Architecture)
 
+[![Build and Push Camply](https://github.com/kkweon/camply-docker/actions/workflows/build-and-push.yml/badge.svg)](https://github.com/kkweon/camply-docker/actions/workflows/build-and-push.yml)
+[![PyPI version](https://badge.fury.io/py/camply.svg)](https://badge.fury.io/py/camply)
+
 This repository automatically builds and publishes a multi-architecture Docker image for [juftin/camply](https://github.com/juftin/camply) specifically targeting `linux/amd64` and `linux/arm64` (e.g., Raspberry Pi 5).
 
 ## Usage
